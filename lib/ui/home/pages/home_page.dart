@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
       body: GridView.builder(
           shrinkWrap: true,
           physics:
-          const NeverScrollableScrollPhysics(),
+          const BouncingScrollPhysics(),
           itemCount: _controller.listHomeType.length,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisSpacing: 0,
